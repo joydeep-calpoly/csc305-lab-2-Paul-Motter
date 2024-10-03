@@ -1,4 +1,3 @@
-package orgParsing;
 import java.util.ArrayList;
 
 class Person {

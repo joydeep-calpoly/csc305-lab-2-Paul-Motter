@@ -1,4 +1,3 @@
-package orgParsing;
 
 class Reward {
     private final String name;

@@ -1,5 +1,4 @@
-package orgParsing;
-import org.json.*;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -13,7 +12,11 @@ class Main {
             sb.append(reader.nextLine());
         }
         reader.close();
-        Person person = ExtractJSON.parseJSON(new JSONObject(sb.toString()));
+
+
+
+        
+        Person person = ExtractJSON.parseJSON();
         System.out.println(person);
     }
     

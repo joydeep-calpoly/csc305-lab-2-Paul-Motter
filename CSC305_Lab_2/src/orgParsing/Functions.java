@@ -1,5 +1,0 @@
-package orgParsing;
-
-class Functions {
-        
-}
