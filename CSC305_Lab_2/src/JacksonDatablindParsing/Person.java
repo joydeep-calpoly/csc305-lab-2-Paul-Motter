@@ -1,3 +1,5 @@
+package JacksonDatablindParsing;
+import com.fasterxml.jackson.annotation.*;
 import java.util.ArrayList;
 
 class Person {
@@ -6,7 +8,10 @@ class Person {
     private final ArrayList<String> knownFor;
     private final String name;
 
-    Person(ArrayList<Reward> rewards, ArrayList<String> knownFor, String name){
+    @JsonCreator
+    Person(@JsonProperty("awards") ArrayList<Reward> rewards, 
+           @JsonProperty("knownFor") ArrayList<String> knownFor, 
+           @JsonProperty("name") String name){
         this.rewards = rewards;
         this.knownFor = knownFor;
         this.name = name;

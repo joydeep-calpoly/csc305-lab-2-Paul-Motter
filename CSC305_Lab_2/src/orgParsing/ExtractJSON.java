@@ -4,7 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 class ExtractJSON {
- 
+
     static Person parseJSON(JSONObject json){
         //Parse Rewards from json.
         JSONArray rewardsJSON = json.getJSONArray("awards");

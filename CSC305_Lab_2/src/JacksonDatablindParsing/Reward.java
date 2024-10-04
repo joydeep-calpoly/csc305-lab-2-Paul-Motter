@@ -1,9 +1,13 @@
+package JacksonDatablindParsing;
+import com.fasterxml.jackson.annotation.*;
 
 class Reward {
     private final String name;
     private final int year;
 
-    Reward(String name, int year){
+    @JsonCreator
+    Reward(@JsonProperty("name") String name, 
+           @JsonProperty("year") int year){
         this.name = name;
         this.year = year;
     }
