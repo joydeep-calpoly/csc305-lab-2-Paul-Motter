@@ -6,7 +6,7 @@ class Reward {
     private final int year;
 
     @JsonCreator
-    Reward(@JsonProperty("name") String name, 
+    private Reward(@JsonProperty("name") String name, 
            @JsonProperty("year") int year){
         this.name = name;
         this.year = year;

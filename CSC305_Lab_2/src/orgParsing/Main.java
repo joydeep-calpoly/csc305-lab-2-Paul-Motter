@@ -6,7 +6,7 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) throws FileNotFoundException {
         
-        File f = new File("CSC305_Lab_2/input3.json");
+        File f = new File("CSC305_Lab_2/input2.json");
         Scanner reader = new Scanner(f);
         StringBuilder sb = new StringBuilder();
         while (reader.hasNextLine()){

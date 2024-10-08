@@ -9,7 +9,7 @@ class Person {
     private final String name;
 
     @JsonCreator
-    Person(@JsonProperty("awards") ArrayList<Reward> rewards, 
+    private Person(@JsonProperty("awards") ArrayList<Reward> rewards, 
            @JsonProperty("knownFor") ArrayList<String> knownFor, 
            @JsonProperty("name") String name){
         this.rewards = rewards;
